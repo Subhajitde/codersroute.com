@@ -1,0 +1,43 @@
+body {
+  background: #f1fbff;
+}
+
+.nav-header-one {
+  color: white;
+}
+
+.nav-header-one:hover {
+  color: #008037;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.portfolio .card {
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.team .card {
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.team .card-body i {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card {
+    margin-bottom: 30px;
+  }
+  .img-area img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-text {
+    padding-top: 50px;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+}

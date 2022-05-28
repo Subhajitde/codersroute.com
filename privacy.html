@@ -1,225 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>xplr - A hackable, minimal, fast TUI file explorer</title>
-    <meta
-      name="description"
-      content="xplr is a hackable, minimal, fast TUI file explorer "
-    />
-
-    <!--Inter UI font-->
-    <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
-
-    <!--vendors styles-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
-
-    <!-- Icons -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="126x128"
-      href="/assets/icon/xplr128.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="64x64"
-      href="/assets/icon/xplr64.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/icon/xplr32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/icon/xplr16.png"
-    />
-
-    <!-- Bootstrap CSS / Color Scheme -->
-    <link rel="stylesheet" href="css/default.css" id="theme-color" />
-
-    <!--  -------------  SEO TAGS --------------------->
-    <meta name="title" content="xplr" />
-    <meta
-      name="description"
-      content="A hackable, minimal, fast TUI file explorer"
-    />
-
-    <meta name="twitter:title" content="xplr" />
-    <meta
-      name="twitter:description"
-      content="A hackable, minimal, fast TUI file explorer"
-    />
-    <meta
-      name="twitter:image"
-      content="https://s8.gifyu.com/images/xplr-0.17.6.jpg"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://xplr.dev" />
-
-    <meta property="og:title" content="xplr" />
-    <meta property="og:type" content="object" />
-    <meta property="og:url" content="https://xplr.dev" />
-    <meta
-      property="og:image"
-      content="https://s8.gifyu.com/images/xplr-0.17.6.jpg"
-    />
-
-    <meta itemprop="name" content="xplr" />
-    <meta
-      itemprop="description"
-      content="A hackable, minimal, fast TUI file explorer"
-    />
-
-    <!-- Youtube Embed -->
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/paulirish/lite-youtube-embed@master/src/lite-yt-embed.min.css"
-    />
-
-    <script
-      defer="defer"
-      src="https://cdn.jsdelivr.net/gh/paulirish/lite-youtube-embed@master/src/lite-yt-embed.min.js"
-    ></script>
-
-    <!-- EthicalAds by "Read The Docs" folks -->
-    <script
-      async
-      src="https://media.ethicalads.io/media/client/ethicalads.min.js"
-    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://secure.gravatar.com/avatar/d1517ccdc90db3d5f7e6bca52452ba0c?size=180" />
+    <link rel="icon" sizes="32x32" href="https://secure.gravatar.com/avatar/d1517ccdc90db3d5f7e6bca52452ba0c?size=32" />
+    <link rel="icon" sizes="16x16" href="https://secure.gravatar.com/avatar/d1517ccdc90db3d5f7e6bca52452ba0c?size=16" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <title>Data collected in Coders Route Games</title>
   </head>
-
   <body>
-    <!--navigation-->
-    <section>
-      <div class="container">
-        <nav class="navbar navbar-expand-md navbar-dark">
-          <a class="navbar-brand heading-black" href="/">
-            <img src="/assets/icon/xplr32.png" alt="xplr" />
-          </a>
-          <button
-            class="navbar-toggler navbar-toggler-right border-0"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span data-feather="grid"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link page-scroll"
-                  href="/en/introduction.html#features"
-                >
-                  Features
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="/en">Documentation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="/en/community.html">
-                  Community
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link page-scroll"
-                  href="https://github.com/sayanarijit/xplr"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  GitHub
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <div class="row">
+      <div class="col-sm-1 col-md-2"></div>
 
-        <hr />
+      <div class="col-sm-10 col-md-8">
+        <div class="container" style="font-family: 'Russo One', sans-serif;">
+
+         <h2>Data collected in Coders Route Games</h2>
+         <h5><i>Last updated 17 August 2021</i></h5>
+
+         <p class="lead">
+         Coders Route is committed to the protection of your privacy. Any collected data will only ever be used in accordance with this policy. This policy will also let you know about what information is collected by our third-party service providers, and link to how you can find out about how they use it.
+         <br/><br/>
+         This policy applies to all versions of the game "Grab The Flag" and their associated websites or other applications ("Games").
+         <br/><br/>
+         By playing Coders Route Games you are consenting to the collection of data as outlined in this privacy policy. You also accept that this privacy policy can be updated from time to time for any reason, with the latest date of changes published at the top of this page.
+         </p>
+         <br/>
+
+         <h3>Collection of Data</h3>
+         <p class="lead">
+         <u>Sensitive Data:</u> Coders Route does not collect sensitive information about you. <br/><br/>
+
+         <u>Personally identifiable Data:</u> Our Games collect certain non-sensitive, data as outlined in this privacy policy. Some of this information is automatically gathered, and could be considered personally identifiable in certain circumstances, however it will generally always be anonymised prior to being viewed by Coders Route, and never sold or shared. 
+         <br/><br/>
+         Personally identifiable data will only otherwise be actively collected by Coders Route in very specific circumstances, such as if you contact us directly.
+         </p>
+
+         <h3>Why Collect Data?</h3><br/><br/>
+         <p class="lead">
+         <u>Player Feedback and Support:</u> 
+         <br/>
+         If you contact us with a comment or query, Coders Route will keep a copy of any personal information you provide. This is so that we can respond to your comments and questions as a part of our commitment to providing you with player support. If you contact us directly for any reason, we also keep a copy of that correspondence. 
+         <br/><br/>
+
+         <u>Advertising and Analytics:</u> 
+         <br/>
+         Advertising: When we offer our Games as free-to-play, we still require the game to generate income to help fund development costs and efforts to make the best game possible. Advertising is one way we can help cover our costs, and in order to implement relevant advertising a certain amount of information may be collected by each third-party ad network that operates within our Games. That information may be considered personally identifiable, or it could be considered personally identifiable in certain circumstances. This information is only ever used for our legitimate business interests and will never be sold or shared by us. 
+         <br/><br/>
+         Nevertheless, the data is provided to us by third parties.  While we use all reasonable commercial endeavours to ensure that they adhere to any applicable laws, we encourage you to familiarise yourself with their data policies.
+         <br/><br/>
+         A list of each ad network we use and information about what data they collect is contained at the conclusion of this policy. Please read those privacy policies carefully before using our Games.
+         <br/><br/>
+         Analytics: Information collected about our Game usage and about your device and location, allows us to better integrate updates, find potential device specific problems and bugs, explore localisation opportunities and make better Games that are tailored to our user's needs. 
+         </p>
+
+
+         <h3>How Do we Use Data We Collect</h3><br/><br/>
+         <p class="lead">
+         <u>Data collected for Advertising</u>
+         <br/>
+         Because many Coders Route Games are free-to-play, we periodically display in-game advertising by third parties to generate revenue. In order to display relevant advertising (also known as "interest based advertising") and measure performance of advertising campaigns we have implemented several ad-networks within the game which may collect and transfer non-sensitive device information such as:
+
+
+         <ul class="dots">
+             <li>The advertisement you have viewed and if you have engaged with it;</li>
+             <li>Device make and manufacturer;</li>
+             <li>Operating System;</li>
+             <li>Generic geographic location, such as the city you are located in;</li>
+             <li>Carrier;</li>
+             <li>Language settings;</li>
+             <li>IP Address;</li>
+             <li>Android Advertising identifier or Apple Identifier for Advertisers.</li>
+         </ul>
+         </p>
+
+         <p class="lead">
+         <br/>
+         <u>Data collected for Analytics</u>
+         <br/>
+         We have implemented Analytics tools to help us understand how our Games are being used in order to help us improve our Games and plan for future game releases. For example we use Flurry Analytics and Firebase Analytics to keep track of how many players are engaging with our Games, player progress, any in-app purchases, as well as device type, operating system, language settings, play session lengths and broad geographic information like your country and city.
+
+         </p>
+
+         <h3>Opt Out of interest-based advertising</h3></br></br>
+         <p class="lead">
+         It is possible to opt out of interest-based advertising. In doing so, a lot of the data captured by us or our third-party service providers will not be collected. 
+         <br/><br/>
+         <u>Your Device controls</u></br>
+         If you would like to opt-out of interest based advertising, we recommend following the below steps.
+               </p>
+         <ul class="dots">
+             <li><h3>Apple devices:</h3><p class="lead"> Follow the steps outlined on <a href="https://support.apple.com/en-au/HT202074">this Apple support page</a></p></li>
+             <li><h3>Android devices:</h3><p class="lead"> Navigate to the Google settings App, select Ads and then choose to reset your Android Ad ID or opt-out of personalized ads.</p></li>
+               </ul>
+
+
+         <p class="lead">
+         <u>Third Party Service Providers</u>
+
+         <p class="lead">
+         Google</br>
+         <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></br>
+
+         <p class="lead">
+
+         Firebase Analytics and AdMob</br>
+         <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></br>
+         <a href="https://adssettings.google.com" target="_blank">Opt-out</a></br>
+         <a href="https://policies.google.com/technologies/partner-sites" target="_blank">More information on Google</a></br></br>
+
+         OneSignal</br>
+         <a href="https://onesignal.com/privacy_policy" target="_blank">Privacy Policy</a></br></br>
+
+         Unity Ads Network</br>
+         <a href="https://unity3d.com/legal/privacy-policy" target="_blank">Privacy Policy</a></br>
+         <i>To Opt Out, click the i button on any Unity Ad in game</i></br></br>
+
+         MoPub</br>
+         <a href="https://www.mopub.com/legal/privacy" target="_blank">Privacy Policy</a></br>
+         <a href="https://www.mopub.com/legal/optout" target="_blank">Opt-out</a></br></br>
+
+         myTarget</br>
+         <a href="https://legal.my.com/us/mytarget/privacy/" target="_blank">Privacy Policy</a></br>
+         <a href="https://target.my.com/optout/" target="_blank">Opt-out</a></br></br>
+
+         Tapjoy</br>
+         <a href="https://www.tapjoy.com/legal/players/privacy-policy/" target="_blank">Privacy Policy</a></br>
+         <a href="https://www.tapjoy.com/legal/players/opt-out-of-tapjoy-interest-based-advertising/" target="_blank">Opt-out</a></br></br>
+
+         Vungle</br>
+         <a href="http://vungle.com/privacy/" target="_blank">Privacy Policy & Opt-out</a></br></br>
+
+         Fyber</br>
+         <a href="https://www.fyber.com/privacy-policy/" target="_blank">Privacy Policy</a></br></br>
+
+         Facebook</br>
+         <a href="https://www.facebook.com/about/privacy" target="_blank">Privacy Policy</a></br>
+         <a href="https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen" target="_blank">Opt-out</a></br></br>
+
+         InMobi</br>
+         <a href="https://www.inmobi.com/privacy-policy/" target="_blank">Privacy Policy</a></br></br>
+
+         AdColony</br>
+         <a href="https://www.adcolony.com/privacy-policy/" target="_blank">Privacy Policy & Opt-Out</a></br></br>
+                                                     
+         </p>
+         <br/>
+
+         <h3>Age Limits</h3><br/><br/>
+         <p class="lead">
+         All Coders Route Games are designed for people who are at least 13 years of age. In playing our Games, you represent that you are aged 13 or older. If you are a guardian or parent who is concerned that we may have any information from or about a child under the age of 13, please <a href="mailto:contact@codersroute.com">contact us</a>, and we will permanently delete any information we have under our control.
+
+         </p>
+         <br/>
+
+         <h3>What happens if I log into Facebook</h3><br/><br/>
+         <p class="lead">
+         Some Coders Route Games will allow you to login to Facebook to compete against your friends. Any data about your full name, gender or friends will not be stored on our server, and is only saved locally on your device and within your linked Facebook account to allow us to correctly display your friends in game. 
+         <br/><br/>
+         The use of Facebook Login is completely optional, and you must hold a valid Facebook account, which also means you must be above the age of 13 to use this service.
+         </p>
+
+         <br/>
+         <h3>Access to your data, and permanent deletion of your data</h3><br/><br/>
+         <p class="lead">
+         Coders Route will retain your data only as necessary for our <i>legitimate business interests</i>, such as to comply with our legal obligations, resolve disputes, and enforce our agreements. 
+         <br/><br/>
+         No matter how we come in contact with your data, you have the right to access the data Coders Route holds about you and to update and/or correct it, subject to certain exceptions.
+         <br/><br/>
+
+         <u>Data Subject Requests</u>
+         <br/><br/>
+         In the event that you send a data subject request to Coders Route, or one of our third-party partners informs us that you have contacted them directly about your personal data they collected while you were using our service, We will respond to that request in accordance with any applicable legislation.
+         <br/><br/>
+         If you wish to know what data we hold about you, if any, please make out your request to us in writing at the email address listed below. Please be aware that in order to protect the information in Our control, We will require identification from you before releasing any information.
+         <br/><br/>
+
+         <u>Disclosure, and Security of Your Information</u>
+         <br/><br/>
+         We will not sell, trade, rent or disclose any of the personal information you provide to us for any reason, without your prior consent. Otherwise, your Personal Information will only be disclosed where required or allowable by law.
+         <br/><br/>
+         Your Personal Information is stored offsite in a manner that reasonably protects it from misuse, loss, unauthorized access, modification or disclosure. 
+
+         </br></br></br>
+
+         <h3>Contact Us</h3></br><br/>
+         <p class="lead">
+         If you have any questions or concerns you can contact us at <a href="mailto:contact@codersroute.com">contact@codersroute.com</a></p>
       </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div
-          id="landing-under-navbar"
-          class="dark flat"
-          data-ea-publisher="xplrdev"
-          data-ea-type="text"
-        ></div>
-      </div>
-    </section>
-
-    <!--hero header-->
-    <section id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
-            <h1 class="heading-black">xplr</h1>
-            <p class="lead">A hackable, minimal, fast TUI file explorer</p>
-
-            <div id="QJaEMeVo9Uw" class="eleventy-plugin-youtube-embed pb-3">
-              <lite-youtube
-                videoid="QJaEMeVo9Uw"
-                style="
-                  background-image: url('https://s8.gifyu.com/images/xplr-0.17.6.jpg');
-                "
-              >
-                <div class="lty-playbtn"></div>
-              </lite-youtube>
-            </div>
-
-            <a
-              class="btn btn-primary d-inline-flex flex-row align-items-center py-3"
-              href="/en/install.html"
-              class="mb-3"
-            >
-              Try or Install
-              <em class="ml-2" data-feather="arrow-right"></em>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--scroll to top-->
-    <div class="scroll-top">
-      <i class="fa fa-angle-up" aria-hidden="true"></i>
+      <div class="col-sm-1 col-md-2"></div>
     </div>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="js/scripts.js"></script>
   </body>
 </html>
+
