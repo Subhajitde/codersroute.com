@@ -45,12 +45,27 @@ button a {
   .img-area img {
     width: 100%;
   }
+
+  .youtube {
+    height: 400px;
+  }
 }
+
 @media only screen and (max-width: 767px) {
   .about-text {
     padding-top: 50px;
   }
   .card {
     margin-bottom: 30px;
+  }
+
+  .youtube {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .youtube {
+    height: 600px;
   }
 }
